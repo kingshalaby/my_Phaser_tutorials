@@ -10,7 +10,7 @@ Scene.Preloader.prototype = {
 		this.preloadBar = this.add.sprite((640-311)/2, (960-27)/2, 'preloaderBar'); // show loader bar
 		this.load.setPreloadSprite(this.preloadBar); // assign loader image so it works as a loader
 
-		this.load.image('spike', 'Graphics/spike.png'); // preload game assets
+		this.load.image('mr_cube', 'Graphics/mr_cube.png'); // preload game assets
 		this.load.image('ground_single', 'Graphics/ground_single.png');
 
 	},

@@ -2,17 +2,17 @@
 <html>
 <head>
 	<meta charset="UTF-8" />
-	<title>Raz - Phaser tutorial by Maciej Czekala</title>
-	<style> body { margin: 0; background: #B4D9E7; } </style>
-	<script src="Phaser/phaser.min.js"></script>
-	<script src="Scenes/Boot.js"></script>
+	<title>Raz - Phaser tutorial by Maciej Czekala</title> <!-- Title of the html page	-->
+	<style> body { margin: 0; background: #B4D9E7; } </style> <!-- Settings for the page background	-->
+	<script src="Phaser/phaser.min.js"></script> <!-- Phaser engine, you need this file to use Phaser	-->
+	<script src="Scenes/Boot.js"></script> <!-- In this section you require javascript files so they can be used later on	-->
 	<script src="Scenes/Preloader.js"></script>
 	<script src="Scenes/MainMenu.js"></script>
 </head>
 <body>
 <script type="text/javascript">
 (function () {
-	var game = new Phaser.Game(640, 960, Phaser.CANVAS, 'game');
+	var game = new Phaser.Game(640, 960, Phaser.CANVAS, 'game'); // Phaser engine initialization
 	game.state.add('Boot', Scene.Boot); // scene to start loading game assets.
 	game.state.add('Preloader', Scene.Preloader); // loading game assets
 	game.state.add('MainMenu', Scene.MainMenu); // fist proper game screen
